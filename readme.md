@@ -1,3 +1,5 @@
+在ICG基础上写的server版本，做了一些修改，用作AR装配应用的服务器，下面是ICG的原内容
+
 # ICG: Iterative Corresponding Geometry
 
 ## Paper

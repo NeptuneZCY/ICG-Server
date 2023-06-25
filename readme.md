@@ -1,5 +1,7 @@
 在ICG基础上写的server版本，做了一些修改，用作AR装配应用的服务器，下面是ICG的原内容
 
+本地版本在根目录下留存了原Release文件夹，包含了大量物体模型和RGB-D数据集，因此没有上传，请回滚代码的时候把Release文件夹拖出去以免误删
+
 # ICG: Iterative Corresponding Geometry
 
 ## Paper

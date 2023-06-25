@@ -1,0 +1,24 @@
+digraph "icg::Camera"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="icg::Camera",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract class that provides images to other components and contains intrinsics as well as the pose o..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="icg::ColorCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1ColorCamera.html",tooltip="Abstract Camera class that defines a color camera."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="icg::AzureKinectColorCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1AzureKinectColorCamera.html",tooltip="Camera that allows getting color images from an AzureKinect camera."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="icg::LoaderColorCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1LoaderColorCamera.html",tooltip="Camera that allows loading color images from a directory."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="icg::RealSenseColorCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1RealSenseColorCamera.html",tooltip="Camera that allows getting color images from a RealSense camera."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="icg::DepthCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1DepthCamera.html",tooltip="Abstract Camera class that defines a depth camera that, in addition to intrinsics,..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="icg::AzureKinectDepthCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1AzureKinectDepthCamera.html",tooltip="Camera that allows getting color images from an AzureKinect camera."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="icg::LoaderDepthCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1LoaderDepthCamera.html",tooltip="Camera that allows loading depth images from a directory."];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="icg::RealSenseDepthCamera",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1RealSenseDepthCamera.html",tooltip="Camera that allows getting depth images from a RealSense camera."];
+}

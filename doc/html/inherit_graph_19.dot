@@ -1,0 +1,24 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="icg::Renderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1Renderer.html",tooltip="Abstract class that defines a renderer as a single camera at a defined location."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="icg::FocusedRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FocusedRenderer.html",tooltip="Abstract Renderer class that defines a focused renderer that crops and scales the scene to focus on r..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="icg::FocusedDepthRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FocusedDepthRenderer.html",tooltip="Abstract Renderer class that defines a focused depth renderer that extends the FocusedRenderer class ..."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="icg::FocusedBasicDepthRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FocusedBasicDepthRenderer.html",tooltip="Renderer that extends the focused depth renderer class with functionality from BasicDepthRendererCore..."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="icg::FocusedNormalRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FocusedNormalRenderer.html",tooltip="Renderer that extends the focused depth renderer class with functionality from NormalRendererCore to ..."];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="icg::FullRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FullRenderer.html",tooltip="Abstract Renderer class that defines a full renderer that renders the image according to the image wi..."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="icg::FullDepthRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FullDepthRenderer.html",tooltip="Abstract Renderer class that defines a full depth renderer that extends the FullRenderer class with f..."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="icg::FullBasicDepthRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FullBasicDepthRenderer.html",tooltip="Renderer that extends the full depth renderer class with functionality from BasicDepthRendererCore to..."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="icg::FullNormalRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FullNormalRenderer.html",tooltip="Renderer that extends the full depth renderer class with functionality from NormalRendererCore to ren..."];
+}

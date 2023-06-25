@@ -1,0 +1,9 @@
+digraph "icg::DepthModel"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="icg::DepthModel",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Model that holds a Sparse Viewpoint Model that is generated from a Body and that is used by the Depth..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="icg::Model",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1Model.html",tooltip="Abstract class that precomputes and stores geometric information from Body objects that is required b..."];
+}

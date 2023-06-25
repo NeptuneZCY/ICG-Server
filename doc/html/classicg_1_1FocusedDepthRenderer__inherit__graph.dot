@@ -1,0 +1,15 @@
+digraph "icg::FocusedDepthRenderer"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="icg::FocusedDepthRenderer",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract Renderer class that defines a focused depth renderer that extends the FocusedRenderer class ..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="icg::FocusedRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FocusedRenderer.html",tooltip="Abstract Renderer class that defines a focused renderer that crops and scales the scene to focus on r..."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="icg::Renderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1Renderer.html",tooltip="Abstract class that defines a renderer as a single camera at a defined location."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="icg::FocusedBasicDepthRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FocusedBasicDepthRenderer.html",tooltip="Renderer that extends the focused depth renderer class with functionality from BasicDepthRendererCore..."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="icg::FocusedNormalRenderer",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classicg_1_1FocusedNormalRenderer.html",tooltip="Renderer that extends the focused depth renderer class with functionality from NormalRendererCore to ..."];
+}

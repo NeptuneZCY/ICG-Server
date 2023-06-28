@@ -1,6 +1,10 @@
-在ICG基础上写的server版本，做了一些修改，用作AR装配应用的服务器，下面是ICG的原内容
+在ICG基础上写的server版本，做了一些修改，用作AR装配应用的服务器
+
+若想使用该项目请先掌握ICG原项目，https://github.com/DLR-RM/3DObjectTracking/tree/master/ICG
 
 本地版本在根目录下留存了原Release文件夹，包含了大量物体模型和RGB-D数据集，因此没有上传，请回滚代码的时候把Release文件夹拖出去以免误删
+
+下面是ICG的Readme
 
 # ICG: Iterative Corresponding Geometry
 
